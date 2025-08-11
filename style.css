@@ -29,6 +29,7 @@
     --bg-s1:#f9eedf;
     --height-s2: 452px;
     --bg-s2:#d1d1aa;
+    --padding-footer: 0 400px;
 }
 header{
     width: 100%;
@@ -255,6 +256,136 @@ main{
             }
             button:hover{
                 background-color: #25252515;
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: auto;
+    .s1{
+        width: 100%;
+        height: auto;   
+        padding: 0 630px;
+        
+        p{
+            font-family: var(--text-font);
+            text-align: center;
+            font-size: 13.5px;
+            padding: 35px 0;
+        }
+    }  
+
+    .s2{
+        width: 100%;
+        height: 935px;
+        box-shadow: -10px 0 5px var(--shadow);
+        padding: var(--padding);
+
+        .art1 {
+            width: 100%;
+            height: 50%;
+            border-bottom: 2px solid var(--shadow);
+            display: flex;
+            justify-content: space-between;
+
+            .list {
+                width: auto;
+                height: 100%;
+                
+                .column-title{
+                    font-family: var(--text-font);
+                    margin: 35px 0;
+                }
+                ul{
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 35px;
+
+                    li{
+                        list-style-type: none;
+
+                        a{
+                            font-family: var(--text-font);
+                            text-decoration: none;
+                            color: #767676;
+                        }
+                        a:hover{
+                            color: var(--text-dark);
+                        }
+                    }
+                }
+            }
+        }
+        .art2{
+            width: 100%;
+            height: 50%;
+
+            #sect1{
+                width: auto;
+                height: 115px;
+                
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    li{
+                        list-style-type: none;
+                        padding: 10px;
+                        border-radius: 50%;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            i{
+                                font-size: 25px;
+                                background-color: var(--text-dark);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 37px;
+                                height: 37px;
+                                border-radius: 50%;
+                            }  
+                        }
+                    }
+                    li:hover{
+                        background-color: #c2c2c25d;
+                    }
+                }
+            }
+
+            #sect2{
+                width: 100%;
+                height: calc(100% - 115px);
+                display: flex; 
+                flex-direction: column; 
+                ul{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    font-family: var(--text-font);
+                    li{
+                        list-style-type: none;
+                        a{
+                            text-decoration: none;
+                            color: var(--text-dark);
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                p{
+                    font-family: var(--text-font);
+                    margin: 25px 0;
+                    color: rgb(177, 174, 174);
+                }
             }
         }
     }
